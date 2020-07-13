@@ -9,6 +9,7 @@
     "axios": "^0.19.2",
     "babel-cli": "^6.26.0",
     "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.0",
     "ejs": "^3.1.2",
     "express": "^4.17.1",
     "jasmine-node": "^3.0.0",
@@ -22,11 +23,11 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "webpack": "webpack",
     "start": "npm run webpack && nodemon --exec babel-node -- bin/www",
     "build": "react-scripts build",
     "test": "./node_modules/.bin/jasmine",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "webpack":"webpack"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,9 +1,12 @@
-//server/routes/routes.js
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
+//Routing happens here
+router.get('/app', function(req, res){
+  res.render('index')
+});
 
-router.get('/', function(req, res){
+router.get('/api', function(req, res){
   res.render('index')
 });
 
