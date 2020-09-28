@@ -1,7 +1,6 @@
 //ES6 style of imports, gets converted to require by Babel
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './css/index.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import App from './components/App';
 //import * as serviceWorker from './serviceWorker'; to be removed per guide
