@@ -1,10 +1,15 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const path = require('path');
 
-const router = require('./routes/routes.js')
+app.use(cors());
 
-app.use('/', router);
+app.use('/login', (req, res) => {
+    res.send({
+        token: 'test123'
+    });
+});
 
 module.exports=app;
 
