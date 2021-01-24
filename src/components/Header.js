@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import logo from '../img/embedded.jpg'
 
 function Header() {
   return (
@@ -8,7 +9,7 @@ function Header() {
         <Navbar bg="dark" variant="dark" >
             <Navbar.Brand href="app">
               <img
-                src="./components/embedded.jpg"
+                src={logo}
                 width="20"
                 height="20"
                 className="d-inline-block align-top"
@@ -16,9 +17,9 @@ function Header() {
               />
             </Navbar.Brand>
             <Nav variant="pills">
-                <Nav.Link href="app">Home</Nav.Link>
-                <Nav.Link href="app/issues">Issues</Nav.Link>
-                <Nav.Link href="app/profile">Profile</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/issues">Issues</Nav.Link>
+                <Nav.Link href="/profile">Profile</Nav.Link>
             </Nav>
         </Navbar>
     </div>

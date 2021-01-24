@@ -1,17 +1,10 @@
 const express = require('express');
 const router = express.Router();
+const path = require('path');
 
-//Routing happens here
-router.get('/app/*', function(req, res){
-  console.log("Do nothing")
-});
-
-router.get('/app', function(req, res){
-  res.sendFile(path.join(__dirname+'../../client/index.ejs'))
-});
-
-router.get('/', function(req, res){
-  res.redirect('/app');
+router.get('/*', (req, res) =>{
+  const indexPath = path.join(__dirname + '../../../client/index.html');
+  res.sendFile(indexPath);
 });
 
 module.exports = router;

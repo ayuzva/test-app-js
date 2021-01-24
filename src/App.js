@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from '../components/Header';
-import Profile from '../components/Profile';
-import Issues from '../components/Issues';
+import Header from './components/Header';
+import Profile from './components/Profile';
+import Issues from './components/Issues';
 
 function App() {
   return (
@@ -10,13 +10,13 @@ function App() {
       <Header />
       <Router>
           <Switch>
-            <Route path="/app">
+            <Route exact path="/">
               <Profile />
             </Route>
-            <Route path="/app/issues">
-              <Issues/>
+            <Route exact path="/issues">
+              <Issues />
             </Route>
-            <Route path="/app/profile">
+            <Route exact path="/profile">
               <Profile />
             </Route>
           </Switch>
